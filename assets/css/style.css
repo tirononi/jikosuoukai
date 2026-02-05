@@ -1,126 +1,25 @@
-/* --- Base --- */
-body {
-    background-color: rgb(255, 245, 253);
-    font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
-    color: #6c6c6c;
-    margin: 0;
-}
+/* style.css */
 
-/* --- Block: header --- */
-.header {
-    padding: 20px;
-}
+/* Foundation */
+@import "foundation/_base.css";
+@import "foundation/sanitize.css";
 
-.header__menu {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    justify-content: flex-end; /* 右寄せ */
-    margin: 0;
-    padding: 0;
-}
+/* Layout */
+@import "layout/_header.css";
 
-/* --- Block: hero --- */
-.hero {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(135deg, #ffd0ef, #feebd4);
-}
+/* Object - Component (部品) */
+@import "object/component/_card.css";
 
-.hero__name {
-    font-size: 4rem;
-    color: #fff;
-    margin: 0;
-}
+/* Object - Project (特定の塊) */
+@import "object/project/_hero.css";
+@import "object/project/_section.css";
+@import "object/project/_about.css";
+@import "object/project/_dog-table.css";
 
-.hero__description {
-    font-size: 1.2rem;
-    color: #6c6c6c;
-}
 
-/* --- Block: section --- */
-.section {
-    padding: 60px 15px;
-}
 
-/* Modifier: 背景色が違うバージョン */
-.section--secondary {
-    background-color: #f7e9d5;
-    padding-bottom: 100px;
-}
 
-.section__inner {
-    max-width: 1000px; /* 中身が広がりすぎないように */
-    margin: 0 auto;
-}
 
-.section__title {
-    text-align: center;
-    font-size: 35px;
-    font-weight: bold;
-    padding: 20px 0 40px 0;
-    color: #dd9fc8;
-    margin: 0;
-}
 
-/* --- Block: about-grid --- */
-.about-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
 
-/* --- Block: about-card --- */
-.about-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 4px dotted #efdaac;
-    height: 200px;
-    border-radius: 15px;
-    background-color: rgb(255, 255, 255);
-}
 
-.about-card__title {
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.about-card__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.about-card__item {
-    color: #d7aecf;
-    font-size: 17px;
-}
-
-/* --- Block: dog-table --- */
-.dog-table {
-    margin: 0 auto;
-    border-collapse: collapse;
-}
-
-.dog-table__header {
-    background-color: rgb(255, 249, 254);
-    padding: 30px 100px;
-    border-bottom: 2px solid #dd9fc8;
-}
-
-.dog-table__data {
-    border-bottom: 1px solid #ffd0ef;
-    text-align: center;
-    padding: 20px 0;
-}

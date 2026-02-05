@@ -1,0 +1,9 @@
+/* --- Base --- */
+body {
+    background-color: rgb(255, 245, 253);
+    font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #6c6c6c;
+    margin: 0;
+}
