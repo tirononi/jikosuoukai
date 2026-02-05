@@ -3,6 +3,7 @@
 /* Foundation */
 @import "foundation/_base.css";
 @import "foundation/sanitize.css";
+@import "foundation/_variables.css";
 
 /* Layout */
 @import "layout/_header.css";
