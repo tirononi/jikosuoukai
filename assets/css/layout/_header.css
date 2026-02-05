@@ -11,3 +11,16 @@
     margin: 0;
     padding: 0;
 }
+
+/* layout/_header.css */
+
+.header__menu-item {
+    cursor: pointer; /* マウスを乗せた時に指のマークにする */
+    transition: all 0.3s; /* 色の変化を0.3秒かけてふわっとさせる */
+}
+
+.header__menu-item:hover {
+    color: var(--color-success); /* マウスが乗った時にミント色にする */
+    transform: translateY(-3px);
+}
+

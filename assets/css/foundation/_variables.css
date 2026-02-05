@@ -1,0 +1,36 @@
+:root {
+
+  /* 主役のピンク */
+  --color-primary: #dd9fc8; 
+  
+  /* 脇役（少し落ち着いたピンクやベージュ） */
+  --color-secondary: #f7e9d5; 
+  
+  /* 成功（優しいミントグリーンなど） */
+  --color-success: #b8e1dd; 
+  
+  /* 警告（少し濃いめのコーラルピンクなど） */
+  --color-danger: #e88d8d; 
+  
+  /* 文字色（今の #6c6c6c でOK！） */
+  --color-text: #6c6c6c; 
+  
+  /* 背景色（薄いピンクベージュなど） */
+  --color-bg: rgb(255, 245, 253);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* 夜用の背景色（真っ黒ではなく、少し深みのある紺やグレー） */
+    --color-bg: #1a1a1a; 
+    
+    /* 夜用の文字色（真っ白ではなく、少し目に優しい明るいグレー） */
+    --color-text: #e0e0e0;
+    
+    /* セカンド背景色（夜でも馴染む少し暗めの色） */
+    --color-secondary: #2d2d2d;
+
+    /* ピンクも少しだけ明るくすると夜でも綺麗に見えます */
+    --color-primary: #ffb7e2; 
+  }
+}

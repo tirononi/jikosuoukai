@@ -4,10 +4,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 4px dotted #efdaac;
+    
     height: 200px;
     border-radius: 15px;
-    background-color: rgb(255, 255, 255);
+
+    border: 4px dotted var(--color-primary); /* 元の #dd9fc8 */
+    background-color: #fff; /* もし少し白く浮かせたいなら白でもOK */
 }
 
 .about-card__title {
@@ -24,6 +26,6 @@
 }
 
 .about-card__item {
-    color: #d7aecf;
+    color: var(--color-primary); /* 元のピンク */
     font-size: 17px;
 }
