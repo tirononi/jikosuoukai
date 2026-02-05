@@ -1,0 +1,17 @@
+/* --- Block: dog-table --- */
+.dog-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.dog-table__header {
+    background-color: rgb(255, 249, 254);
+    padding: 30px 100px;
+    border-bottom: 2px solid #dd9fc8;
+}
+
+.dog-table__data {
+    border-bottom: 1px solid #ffd0ef;
+    text-align: center;
+    padding: 20px 0;
+}

@@ -1,0 +1,29 @@
+/* --- Block: about-card --- */
+.about-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 4px dotted #efdaac;
+    height: 200px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+.about-card__title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.about-card__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.about-card__item {
+    color: #d7aecf;
+    font-size: 17px;
+}

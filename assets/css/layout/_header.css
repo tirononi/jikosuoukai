@@ -1,0 +1,13 @@
+/* --- Block: header --- */
+.header {
+    padding: 20px;
+}
+
+.header__menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: flex-end; /* 右寄せ */
+    margin: 0;
+    padding: 0;
+}
