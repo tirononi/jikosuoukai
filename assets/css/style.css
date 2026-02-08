@@ -7,6 +7,7 @@
 
 /* Layout */
 @import "layout/_header.css";
+@import "layout/_footer.css";
 
 /* Object - Component (部品) */
 @import "object/component/_card.css";
@@ -16,6 +17,7 @@
 @import "object/project/_section.css";
 @import "object/project/_about.css";
 @import "object/project/_dog-table.css";
+@import "object/project/_works.css";
 
 
 

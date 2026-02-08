@@ -1,6 +1,17 @@
 /* --- Block: header --- */
 .header {
     padding: 20px;
+
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(48, 38, 47, 0.1);
 }
 
 .header__menu {
@@ -23,4 +34,6 @@
     color: var(--color-success); /* マウスが乗った時にミント色にする */
     transform: translateY(-3px);
 }
+
+
 

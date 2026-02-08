@@ -1,0 +1,23 @@
+/* Works Grid Layout */
+.p-works__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3列に並べる */
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.p-works__item {
+    background: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.p-works__item:hover {
+    transform: translateY(-5px);
+}
+
+.p-works__img {
+    aspect-ratio: 16 / 9;
+    background-color: #ddd; /* ここに画像が入る想定 */
+}
