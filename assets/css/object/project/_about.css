@@ -4,3 +4,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+
+.about-card {
+    background-color: var(--color-secondary);
+}

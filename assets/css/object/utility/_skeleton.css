@@ -1,0 +1,23 @@
+/* utility/_skeleton.css */
+
+.u-skeleton {
+  /* 背景をグレーのグラデーションにする */
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
+  );
+  background-size: 200% 100%;
+  /* 1.5秒かけて背景を動かし続ける */
+  animation: skeleton-loading 2s infinite;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

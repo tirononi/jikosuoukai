@@ -1,3 +1,61 @@
+@media (max-width: 768px) {
+  /* テーブル全体の設定を解除 */
+  .dog-table {
+    display: block;
+    width: 90%;
+    border: none; /* 元の表の線を消す */
+    border-collapse: separate; /* これがないと border-radius が効かない場合がある */
+  }
+
+  /* <thead> は非表示 */
+  .dog-table__head {
+    display: none;
+  }
+
+  .dog-table__body {
+    display: block;
+    width: 100%;
+  }
+
+  /* 1行(1匹分)を独立した「箱」にする */
+  .dog-table__body tr {
+    display: block;
+    width: 100%; /* 横幅いっぱい使う */
+    margin-bottom: 20px; /* 箱同士の隙間 */
+    padding: 20px; /* 箱の中の余白 */
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px; /* これで丸くなるはず！ */
+    box-shadow: 0 2px 8px rgba(185, 9, 147, 0.194); /* 少し浮かせると可愛くなります */
+  }
+
+  /* セル（名前・特徴）を横に広げる */
+  .dog-table__data {
+    display: flex; /* ここを flex に変えると綺麗になります！ */
+    justify-content: space-between; /* 左にラベル、右に内容を配置 */
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee; /* 項目間の点線 */
+    text-align: right;
+  }
+
+  .dog-table__data:last-child {
+    border-bottom: none;
+  }
+
+  /* ラベル（「犬の名前」など）の設定 */
+  .dog-table__data::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #666;
+    text-align: left;
+    flex-shrink: 0; /* ラベルが潰れないように固定 */
+    margin-right: 10px;
+  }
+}
+
+
 /* --- Block: dog-table --- */
 .dog-table {
     margin: 0 auto;

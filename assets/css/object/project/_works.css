@@ -1,23 +1,54 @@
-/* Works Grid Layout */
+/* ① 【スマホ版】（ベース） */
 .p-works__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3列に並べる */
-    gap: 30px;
-    padding: 40px 0;
+  display: flex; /* grid ではなく flex にします */
+  flex-direction: column; /* 縦に並べる */
+  gap: 20px;
+  padding: 20px 50px;
 }
 
+
+Works Grid Layout
+/* .p-works__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    padding: 40px 0;
+} */
+
 .p-works__item {
-    background: #f9f9f9;
+    background: var(--color-secondary);
     border-radius: 8px;
     overflow: hidden;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .p-works__item:hover {
     transform: translateY(-5px);
+    box-shadow: 0 0px 10px var(--color-primary)
 }
 
 .p-works__img {
     aspect-ratio: 16 / 9;
     background-color: #ddd; /* ここに画像が入る想定 */
+}
+
+.p-works__text {
+    text-align: center;
+}
+
+
+
+/* ② 【タブレット・PC版】（768px以上） */
+@media (min-width: 768px) {
+  .p-works__grid {
+    display: grid; /* PCでは Grid を使うと楽です */
+    grid-template-columns: repeat(3, 1fr); /* 3列に並べる */
+    gap: 30px;
+    padding: 40px 0;
+  }
+
+  .p-works__item {
+    width: auto; /* width: 100% を解除 */
+  }
 }

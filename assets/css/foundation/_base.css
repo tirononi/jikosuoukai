@@ -10,3 +10,15 @@ body {
     background-color: var(--color-bg); /* 元の rgb(255, 245, 253) */
     color: var(--color-text); /* 元の #6c6c6c */
 }
+
+/* foundation/_animation.css 等 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
