@@ -56,9 +56,8 @@
 }
 
 
-/* 2. でも、キーボードで操作した時（:focus-visible）だけは、枠線を出す！ */
-.p-contact-form__input:focus-visible,
-.c-button:focus-visible {
+/* 「入力欄」または「ボタン」がキーボード操作された時 */
+:is(.p-contact-form__input, .c-button):focus-visible {
   outline: 2px solid var(--color-primary, #3b82f6);
   outline-offset: 2px;
 }

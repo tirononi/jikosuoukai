@@ -1,17 +1,18 @@
 /* --- Block: section --- */
 .section {
-    padding: 60px 15px;
+    padding-block: 60px;
+    padding-inline: 15px;
 }
 
 /* Modifier: 背景色が違うバージョン */
 .section--secondary {
     background-color: var(--color-secondary); /* 元の #f7e9d5 */
-    padding-bottom: 100px;
+    padding-block-end: 100px;
 }
 
 .section__inner {
     max-width: 1000px; /* 中身が広がりすぎないように */
-    margin: 0 auto;
+   margin-inline: auto;
 }
 
 .section__title {
