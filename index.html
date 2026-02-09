@@ -10,7 +10,7 @@
 </head>
 <body class="page-body">
     <header class="header">
-        <nav class="header__nav">
+        <nav class="header__nav" aria-label="メインナビゲーション">
             <ul class="header__menu">
                 <li class="header__menu-item">about</li>
                 <li class="header__menu-item">dog</li>
@@ -93,10 +93,36 @@
              </div>    
         </section>
 
+        <section id="contact" class="section section--secondary">
+            <div class="section__inner">
+                <h2 class="section__title">Contact</h2>
+                <form action="#" method="post" class="p-contact-form">
+                    <div class="p-contact-form__item">
+                        <label for="name" class="p-contact-form__label">お名前</label>
+                        <input type="text" id="name" name="name" class="p-contact-form__input" placeholder="はのん 太郎" required>
+                    </div>
+
+                    <div class="p-contact-form__item">
+                        <label for="email" class="p-contact-form__label">メールアドレス</label>
+                        <input type="email" id="email" name="email" class="p-contact-form__input" placeholder="example@mail.com" required>
+                    </div>
+
+                    <div class="p-contact-form__item">
+                        <label for="message" class="p-contact-form__label">メッセージ</label>
+                        <textarea id="message" name="message" class="p-contact-form__input p-contact-form__input--textarea" rows="5" placeholder="ご自由にどうぞ！" required></textarea>
+                    </div>
+
+                    <div class="p-contact-form__submit">
+                        <button type="submit" class="c-button">送信する</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
     </main>
 
     
-    <footer class="l-footer">
+    <footer class="l-footer" aria-label="フッター">
         <p class="l-footer__copy">&copy; 2026 hanon. All rights reserved.</p>
     </footer>
 

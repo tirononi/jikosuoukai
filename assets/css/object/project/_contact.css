@@ -1,0 +1,64 @@
+/* --- Contact Form --- */
+.p-contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.p-contact-form__item {
+    margin-bottom: 20px;
+}
+
+.p-contact-form__label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer; /* ラベルにカーソルを合わせると指マークになる（＝押せるよ！の合図） */
+}
+
+.p-contact-form__input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px; /* スマホでズームされないように16px以上がオススメ */
+    box-sizing: border-box;
+}
+
+.p-contact-form__input--textarea {
+    resize: vertical; /* ユーザーが縦方向だけ高さを変えられるようにする */
+}
+
+.p-contact-form__submit {
+    text-align: center; /* 中にあるボタンを中央に寄せる */
+    margin-top: 30px;   /* 上に少し隙間を作ると綺麗です */
+}
+
+/* 送信ボタンの共通パーツ（Component） */
+.c-button {
+    display: inline-block;
+    padding: 12px 40px;
+    background-color: var(--color-primary); /* 好きな色に変えてみてね！ */
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.c-button:hover {
+    background-color: var(--color-success);
+}
+
+
+/* 2. でも、キーボードで操作した時（:focus-visible）だけは、枠線を出す！ */
+.p-contact-form__input:focus-visible,
+.c-button:focus-visible {
+  outline: 2px solid var(--color-primary, #3b82f6);
+  outline-offset: 2px;
+}
