@@ -73,3 +73,38 @@
     text-align: center;
     padding: 20px 0;
 }
+
+
+/* 親要素：スライドの「入れ物」 */
+
+.carousel__annai {
+    text-align: center;
+}
+.carousel {
+  display: flex; /* 横並びにする */
+  overflow-x: auto; /* はみ出たら横スクロールできるようにする */
+  scroll-snap-type: x mandatory; /* ピタッと止まる魔法（必須！） */
+  gap: 16px; /* 写真と写真の間の隙間 */
+  padding: 20px 0; /* 上下に少し余白 */
+  
+  /* スクロールバーを少しオシャレにする（または消す） */
+  scrollbar-width: none; /* Firefox用：スクロールバーを隠す */
+  -ms-overflow-style: none; /* IE/Edge用 */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Chrome/Safari用：スクロールバーを隠す */
+}
+
+/* 子要素：スライドの「各アイテム」 */
+.carousel-item {
+  flex: 0 0 80%; /* 1枚の幅を画面の80%にする（次の写真がチラッと見える！） */
+  scroll-snap-align: center; /* 止まった時に「真ん中」に来るようにする */
+}
+
+.carousel-item img {
+  width: 300px;
+  height: auto;
+  border-radius: 12px; /* カドを丸くして可愛く */
+  object-fit: cover; /* 写真が歪まないように調整 */
+}
